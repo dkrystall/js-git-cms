@@ -1,0 +1,1 @@
+import simpleGit from 'simple-git';export class GitDirector {    git = simpleGit();    setRepo(gitUrl: webkitURL){        this.git.checkIsRepo(gitUrl.toString)    }    pushAllContent(message: string){        this.git.commit(message, '*')        this.git.push()    }}
